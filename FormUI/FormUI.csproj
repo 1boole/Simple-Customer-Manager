@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="5.15.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\FormCustmer - Copy %282%29.Designer.cs">
+      <DependentUpon>FormCustmer.Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\FormCustmer - Copy - Copy.Designer.cs">
+      <DependentUpon>FormCustmer - Copy.Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\FormCustmer - Copy.Designer.cs">
+      <DependentUpon>FormCustmer.Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Forms\FormCustmer - Copy %282%29.resx">
+      <DependentUpon>FormCustmer.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\FormCustmer - Copy - Copy.resx">
+      <DependentUpon>FormCustmer - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\FormCustmer - Copy.resx">
+      <DependentUpon>FormCustmer.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
